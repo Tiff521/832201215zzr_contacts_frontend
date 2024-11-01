@@ -1,0 +1,204 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.form-container, .list-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* 表单样式 */
+.form-container h2 {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab8;
+}
+
+/* 表格样式 */
+.list-container h2 {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #f3f4f6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: #666;
+    font-weight: bold;
+}
+
+td {
+    color: #333;
+}
+
+button {
+    padding: 6px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:first-child {
+    background-color: #4a90e2;
+    color: white;
+}
+
+button:last-child {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* 导出按钮样式 */
+.export-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.export-button:hover {
+    background-color: #357ab8;
+}
+
+/* 设置 list-container 为相对定位，使导出按钮的绝对定位生效 */
+.list-container {
+    position: relative;
+    padding-top: 40px; /* 为导出按钮预留空间 */
+}
+
+/* 分页按钮居中 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #357ab8;
+}
+
+#pageIndicator {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('wallhaven-6d8l97_3840x2160.png'); 
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+body {
+    background-attachment: fixed;
+}
